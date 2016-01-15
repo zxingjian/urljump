@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>test jump to url</title>
+</head>
+<body>
+url_to_jump:<input type="text" id="urltxt" value="http://xxx.xxx.xxx.xxx:18080/qfyshop/APP.shtml">
+<a href="javascript:dojump();">jump</a>
+<script>
+function dojump()
+{
+  window.location.href=document.getElementById("urltxt").value;
+}
+</script>
+</body>
+</html>
+
