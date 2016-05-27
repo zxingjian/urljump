@@ -9,7 +9,11 @@ url_to_jump:<input type="text" id="urltxt" value="http://xxx.xxx.xxx.xxx:18080/q
 <script>
 function dojump()
 {
-  window.location.href=document.getElementById("urltxt").value;
+  var ls_url = document.getElementById("urltxt").value;
+  if(ls_url != null && ls_url > '')
+  {
+    window.location.href=ls_url;
+  }
 }
 </script>
 </body>

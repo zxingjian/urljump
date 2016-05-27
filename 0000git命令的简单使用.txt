@@ -1,0 +1,38 @@
+cd C:\Users\Administrator\Desktop\gitdemo
+c:
+D:\golang\PortableGit\git-cmd.exe
+
+git config --global user.name “zxingjian”
+git config --global user.email “zxingjian@sohu.com” 
+
+
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/zxingjian/urljump.git
+git push -u origin master
+
+
+git add testurljump.html
+git commit -m "first commit"
+git remote add origin https://github.com/zxingjian/urljump.git
+git push -u origin master
+
+
+https://raw.githubusercontent.com/zxingjian/urljump/master/testurljump.html
+
+http://htmlpreview.github.com/?https://github.com/zxingjian/urljump/blob/master/testurljump.html
+
+-- 返回的文件是,
+Content-Type: text/plain; charset=utf-8
+
+http://htmlpreview.github.com/?https://github.com/zxingjian/urljump/blob/master/testurljump.html
+-- 能否返回这样的格式
+Content-Type: text/html; charset=utf-8
+
+还有一个办法:
+建一个名为gh-pages的分支，然后访问
+username github io / projectname
+即可
+我只是路过。。。 
+
